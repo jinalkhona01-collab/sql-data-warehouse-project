@@ -38,5 +38,5 @@ These insights empower stakeholders with key business metrics, enabling strategi
 This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
 
 ### About Me
-Hi there! I'm Jinal Mahesh Khona. I’m on a mission to share and gain knowledge and make working with data enjoyable and engaging!
+Hi there! I'm ***Jinal Mahesh Khona***. I’m on a mission to share and gain knowledge and make working with data enjoyable and engaging!
   
