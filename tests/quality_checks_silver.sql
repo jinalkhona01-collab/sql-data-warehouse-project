@@ -17,14 +17,8 @@ Usage Notes:
 ===============================================================================
 */
 
--- ====================================================================
--- Checking 'silver.crm_cust_info'
--- ====================================================================
-
-
 ---Check for Nulls or Duplicates in primary key
 --- Expectations: No result
-
 ---cust_info table
 SELECT  cst_id , COUNT(*) FROM silver.crm_cust_info
 GROUP BY cst_id
@@ -35,10 +29,8 @@ SELECT  prd_id , COUNT(*) FROM silver.crm_prd_info
 GROUP BY prd_id
 HAVING COUNT(*)>1 OR  prd_id IS NULL;
 
----sales_details table
 --Check for unwanted spaces
 --- Expectations: No result
-
 ---cust_info table
 SELECT cst_firstname
 FROM silver.crm_cust_info
@@ -55,8 +47,16 @@ sls_ord_num
 FROM silver.crm_sales_details
 WHERE sls_ord_num != TRIM(sls_ord_num);
 
----Data Standarization & Consistency
+-- Checking 'silver.erp_px_cat_g1v2'
+SELECT 
+    * 
+FROM silver.erp_px_cat_g1v2
+WHERE cat != TRIM(cat) 
+   OR subcat != TRIM(subcat) 
+   OR maintenance != TRIM(maintenance);
 
+
+---Data Standarization & Consistency
 ---cust_info table
 SELECT  DISTINCT cst_gndr
 FROM silver.crm_cust_info
@@ -76,6 +76,12 @@ FROM silver.erp_cust_az12
 SELECT DISTINCT cntry 
 FROM silver.erp_loc_a101
 ORDER BY cntry
+	
+-- Checking 'silver.erp_px_cat_g1v2'
+SELECT DISTINCT 
+    maintenance 
+FROM silver.erp_px_cat_g1v2;	
+
 
 ---Check for Nulls or Negatice numbers
 --- Expectations: No result
@@ -166,23 +172,3 @@ ORDER BY sls_sales,sls_quantity,sls_price;
  FROM silver.erp_cust_az12
  WHERE bdate > CURRENT_DATE
 
-
-
-SELECT * 
-FROM silver.crm_cust_info;
-
-SELECT * 
-FROM silver.crm_prd_info;
-
-
-SELECT * 
-FROM silver.crm_sales_details;
-
-SELECT * 
-FROM silver.erp_cust_az12;
-
-SELECT * 
-FROM silver.erp_loc_a101;
-
-SELECT * 
-FROM silver.erp_px_cat_g1v2;
