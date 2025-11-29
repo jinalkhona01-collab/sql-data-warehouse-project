@@ -12,7 +12,7 @@ SQL Functions Used:
 ===============================================================================
 */
 
---11. Data Segmentation (group data based on specific range - helps understand correlation between two measure )
+--10. Data Segmentation (group data based on specific range - helps understand correlation between two measure )
 
 --Segment products into cost ranges and 
 --count how many products fall into each segment
