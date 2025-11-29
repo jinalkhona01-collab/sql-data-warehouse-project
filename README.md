@@ -1,9 +1,19 @@
 # Data Warehouse and Analytics Project
 
-Welcome to the **Data Warehouse and Analytics Project** repository! 🚀
+Welcome to the **Modern Data Warehouse and Analytics Project End-to-End Project** repository! 🚀
 
 This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it showcases real-world practices in **data engineering, data modeling, and analytics**.  
 
+# 📖 Project Overview
+
+![Project Overview](https://github.com/user-attachments/assets/e1acd1a6-1ec4-4964-8f68-1068354fbf66)
+
+This project involves:
+
+1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze, Silver, and Gold** layers.
+2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries. (Star Schema)
+4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 ---
 # 🏗️ Data Architecture
 
@@ -15,16 +25,6 @@ The data architecture for this project follows Medallion Architecture **Bronze, 
 2. **Silver Layer**: This layer includes data cleansing, standardization, and normalization processes to prepare data for analysis.
 3. **Gold Layer**: Houses business-ready data modeled into a star schema required for reporting and analytics.
 
- ---
- 
-# 📖 Project Overview
-
-This project involves:
-
-1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze, Silver, and Gold** layers.
-2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
-3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
-4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
 ---
 
 ## 🎯 Skills Highlighted  
@@ -74,7 +74,30 @@ Develop SQL-based analytics to deliver detailed insights into:
 - **Customer Behavior**
 - **Product Performance**
 - **Sales Trends**
-  
+
+# 📰 Report - Data Analysis and Business Insights 📈
+
+This section summarizes the data analysis process and the resulting reports, providing valuable business insights. 💡
+
+<img width="2141" height="916" alt="Project Roadmap" src="https://github.com/user-attachments/assets/1bad0bf1-5ce9-4b14-a62d-87c1ecff8ed5" />
+
+## Data Exploration and Analysis 🔍
+The EDA process was conducted using SQL queries. 
+The analysis followed a structured approach, covering various aspects of the data:
+
+1.  **Database Exploration:** Understanding the structure and relationships within the database. 🗄️
+2.  **Dimensions Exploration:** Analyzing the characteristics of the dimension tables (customers, products). 📊
+3.  **Date Range Exploration:** Identifying the time period covered by the data. 📅
+4.  **Measures Exploration:** Examining key metrics and their distributions. 🔢
+5.  **Magnitude Exploration:** Understanding the scale of different measures. ⚖️
+6.  **Ranking Analysis:** Identifying top performers (e.g., customers, products). 🏅
+7.  **Change Over Time Analysis:** Tracking trends and patterns over time. 📈
+8.  **Cumulative Analysis:** Examining the accumulated values of metrics. ➕
+9.  **Performance Analysis:** Evaluating the performance of different aspects of the business. 🎯
+10. **Data Segmentation:** Grouping data into meaningful segments for targeted analysis. ✂️
+11. **Part-to-Whole Analysis:** Understanding the contribution of different parts to the overall picture. 🧩
+
+
 ---
 
 ### License
