@@ -18,7 +18,8 @@ The analysis followed a structured approach, covering various aspects of the dat
 10. **Data Segmentation:** Grouping data into meaningful segments for targeted analysis. ✂️
 11. **Part-to-Whole Analysis:** Understanding the contribution of different parts to the overall picture. 🧩
 
-![analysis](https://github.com/user-attachments/assets/95d3e41a-3e25-4ab4-b811-e6228ef523ca)
+<img width="2141" height="916" alt="Project Roadmap" src="https://github.com/user-attachments/assets/1bad0bf1-5ce9-4b14-a62d-87c1ecff8ed5" />
+
 
 ---
 
